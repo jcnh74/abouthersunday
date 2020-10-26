@@ -1,0 +1,93 @@
+body,html{
+  font-family: 'Inconsolata', monospace;
+  color: #2a192a;
+
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: rgb(242,241,220);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.page{
+  background-color: rgb(232,231,210);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.logo-wrap{
+  width:215px;
+  height:196px;
+  margin-bottom:30px;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+.logo-wrap:hover{
+  transform:rotate(-14deg);
+}
+.hello{
+  position: absolute;
+  opacity:0;
+  left:0;
+  transition: left 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 0.3s;
+
+}
+.bio{
+  font-size: 14px;
+}
+.logo-wrap:hover .hello{
+  left:200px;
+  opacity:1;
+}
+
+
+.logo:nth-child(1) .st1{fill:rgba(#CEE29C, 0.75);}
+.logo:nth-child(2) .st1{fill:rgba(#FFE89D, 0.75);}
+.logo:nth-child(3) .st1{fill:rgba(#fec186, 0.75);}
+.logo:nth-child(4) .st1{fill:rgba(#f87745, 0.75);}
+.logo:nth-child(5) .st1{fill:rgba(#f15b5f, 0.75);}
+.logo:nth-child(6) .st1{fill:rgba(#bd3e5c, 0.75);}
+.logo:nth-child(7) .st1{fill:rgba(#ba59a0, 0.75);}
+.logo:nth-child(8) .st1{fill:rgba(#79379a, 0.75);}
+.logo:nth-child(9) .st1{fill:rgba(#462e60, 0.75);}
+.logo:nth-child(10) .st1{fill:rgba(#432e90, 0.75);}
+.logo:nth-child(11) .st1{fill:rgba(#3b4096, 0.75);}
+.logo:nth-child(12) .st1{fill:rgba(#2d5cab, 0.75);}
+.logo:nth-child(13) .st1{fill:rgba(#3a99d8, 0.75);}
+.logo:nth-child(14) .st1{fill:rgba(#a5dbf4, 0.75);}
+
+.logo{
+  position: absolute;
+  top:0;
+  left:0;
+  mix-blend-mode: multiply;
+  transition: margin 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000), transform 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
