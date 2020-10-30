@@ -139,7 +139,7 @@ class App extends Component {
               {svgs}
             </a>
             <div className="avatar" style={{backgroundImage: 'url('+avatar+')'}} />
-            <div className="hello"><strong>Happy Birthday<br />from johnny</strong></div>
+            <div className="hello"><strong>Happy Birthday<br />Love Johnny</strong></div>
           </div>
         </header>
         <ReactFullpage
